@@ -1,0 +1,53 @@
+//zad 0 a
+const city={
+capital:"string",
+population:"number",
+president:"string",
+primeMinisters:"tablica stringów"
+}
+console.log(city.capital);
+console.log(city.population);
+console.log(city.president);
+console.log(city.primeMinisters);
+//zad 0 b
+const timeMachine={
+shape:"string",
+model:"string",
+run( data, place){
+    console.log("działa");
+}
+}
+console.log(timeMachine.shape);
+console.log(timeMachine.model);
+console.log(timeMachine.run());
+
+//zad 1
+const boook={
+    title:"aaa",
+    author:"bbb",
+    numberOfPages:"18"
+}
+console.log(boook.title);
+console.log(boook.author);
+console.log(boook.numberOfPages);
+//zad 2
+const person={
+    name:"aaa",
+    age:"16",
+    sayHellow(){
+        console.log("hello");
+    }
+}
+console.log(person.name);
+console.log(person.age);
+console.log(person.sayHellow());
+//zad 3
+const Recipe={
+title:"",
+servings:"",
+ingredients
+
+}
+console.log(Recipe.title);
+console.log(Recipe.servings);
+console.log(Recipe.ingredients);
