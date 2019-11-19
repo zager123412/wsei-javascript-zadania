@@ -1,0 +1,20 @@
+//zad 0
+
+function Basket(){
+    this.products;
+    this.sum=0;
+  this.addProducts=function(name,sumi){
+this.products=name;
+this.sum=this.sum+sumi;
+
+  }
+  this.showsum=function(){
+      console.log(this.sum);
+}
+    
+};
+
+var aliceBasket=new Basket();
+aliceBasket.addProducts("pomidor",10);
+aliceBasket.addProducts("arbuz",40);
+aliceBasket.showsum();
