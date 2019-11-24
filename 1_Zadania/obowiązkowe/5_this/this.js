@@ -32,7 +32,7 @@ var car={
     },
     
 wypiszPrzeglady(){
-    for(i=0;i<this.tablica.length;i++){
+    for(i=0;i<tablica.length;i++){
         console.log(tablica[i]);
     }
 }
