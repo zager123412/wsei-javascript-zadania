@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//deklaracja funkcji
 function jeden() {
 
-    //Twoj komentarz ...
+    //deklaracja zmiennej ...
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //deklaracja funkcji dwa w funkcji jeden 
     function dwa() {
 
-        //Twoj komentarz ...
+        //wypisanie zmiennej w konsolo
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //deklaracja zmiennej
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //inicjalizacja funkcji "dwa()"
     dwa();
 
-    //Twoj komentarz ...
+    //wypisanie w konsoli zmiennej2
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//inicjalizacja fukcji"jeden()""
 jeden()
