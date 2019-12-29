@@ -1,0 +1,36 @@
+// zad 0
+function Basket(){
+    this.products=[];
+    this.sum=0;
+  this.addProducts=function(name,sumi){
+this.products.push(name);
+this.sum=this.sum+sumi;
+
+  }
+
+  this.showsum=function(){
+      
+      console.log("koszt zakupów:"+this.sum);
+}
+
+ this.showbasket=function(){
+    console.log("lista produktów:");
+        for(i=0;i<this.products.length;i++)
+      {
+console.log(i+1+" "+this.products[i]);
+      }
+    }
+};
+
+var aliceBasket=new Basket();
+aliceBasket.addProducts("pomidor",10);
+aliceBasket.addProducts("arbuz",40);
+aliceBasket.showsum();
+aliceBasket.showbasket();
+
+var bruceBasket = new Basket();
+bruceBasket.addProducts("rice",10);
+bruceBasket.addProducts("grzyby mun",50);
+bruceBasket.addProducts("tofu",20);
+bruceBasket.showsum();
+bruceBasket.showbasket();
