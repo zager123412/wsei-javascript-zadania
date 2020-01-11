@@ -1,14 +1,11 @@
 <script>
     
     document.addEventListener("DOMContentLoaded",fooo);
-     function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  function fooo(){
+     function fooo(){
      
-   document.getElementsByClassName("box big")[0].addEventListener("click",function(){
-//miało być po najechaniu na element ale uznałem że lepszym wyjściem bedzie na event click 
-//
+   document.getElementsByClassName("box big")[0].addEventListener("mousemove",function(){
+
+
 
 
 document.getElementById("globalX").innerHTML=event.pageX;
