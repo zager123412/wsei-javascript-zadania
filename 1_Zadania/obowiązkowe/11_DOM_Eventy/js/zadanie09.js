@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
       console.log("innerFuncOne: ", this);
+      //   var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      // b.style.backgroundColor = randomColor;
     }
     innerFuncOne();
 
