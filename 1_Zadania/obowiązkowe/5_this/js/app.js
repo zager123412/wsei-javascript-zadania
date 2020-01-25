@@ -1,50 +1,39 @@
-//zad 0
-var car={
-    brand:"audi",
-    color:"black",
-    numberOfKilometers:0,
-    printCarinfo(){
-        console.log(this.brand);
-        console.log(this.color);
-        console.log(this.numberOfKilometers);
+//Zadanie #0
+console.log("Zadanie 0:");
+
+let car = {
+    brand: "ferrari",
+    color: "czerwone",
+    numberOfKilometers: 0,
+    printCarinfo() {
+        return this.color+" "+this.brand+", "+this.numberOfKilometers+" km";
     },
-    drive(km){
-    this.numberOfKilometers=this.numberOfKilometers+km
+    drive(distance) {
+        this.numberOfKilometers = this.numberOfKilometers + distance;
     }
-    };
-    console.log(car.printCarinfo());
-    car.drive(20);
-    console.log(car.printCarinfo());
+}
+
+console.log(car.printCarinfo());
+car.drive(20);
+console.log(car.printCarinfo());
+
+//Zadanie #1
+console.log("Zadanie 1:");
+
+car.overview = ["12.12.2018", "6.06.2019"];
+
+car.overviewUpdate = function(date) {
+    this.overview.push(date)
+}
     
-    //zad 1
-    var car={
-        brand:"audi",
-        color:"black",
-        numberOfKilometers:0,
-        tablica,
-        printCarinfo(){
-            console.log(this.brand);
-            console.log(this.color);
-            console.log(this.numberOfKilometers);
-        },
-        drive(km){
-        this.numberOfKilometers=this.numberOfKilometers+km
-        },
-        
-    wypiszPrzeglady(){
-        for(i=0;i<tablica.length;i++){
-            console.log(tablica[i]);
-        }
-    }
-        };
-    var tablica=[];
-    function dodajWpis(data){
-        tablica.push(data);
-    }
-    dodajWpis(1999);
-    dodajWpis(1998);
-    dodajWpis(1997);
-    car.wypiszPrzeglady();
+car.overviewUpdate("10.10.2019");
+
+car.printOverview = function() {
+    for(let i=0; i<this.overview.length; i++)
+        console.log(this.overview[i]);
+}
+
+car.printOverview();
     
     //zad 2
     
