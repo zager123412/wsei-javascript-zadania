@@ -1,36 +1,32 @@
-// zad 0
-function Basket(){
-    this.products=[];
-    this.sum=0;
-  this.addProducts=function(name,sumi){
-this.products.push(name);
-this.sum=this.sum+sumi;
+//Zadanie #0
+console.log("Zadanie 0:");
 
-  }
 
-  this.showsum=function(){
-      
-      console.log("koszt zakupów:"+this.sum);
+
+function Basket() {
+    products = [],
+    prices = [],
+    sum = 0,
+    this.addProduct = function(name, number) {
+        products.push(name);
+        prices.push(number);
+        sum = sum + number;
+    },
+    this.showBasket = function() {
+        for(var i=0; i<products.length; i++)
+            console.log("produkt: "+products[i]+" cena: "+prices[i]);
+
+        console.log("Suma: "+sum);
+    }
 }
 
- this.showbasket=function(){
-    console.log("lista produktów:");
-        for(i=0;i<this.products.length;i++)
-      {
-console.log(i+1+" "+this.products[i]);
-      }
-    }
-};
-
-var aliceBasket=new Basket();
-aliceBasket.addProducts("pomidor",10);
-aliceBasket.addProducts("arbuz",40);
-aliceBasket.showsum();
-aliceBasket.showbasket();
+var aliceBasket = new Basket();
+aliceBasket.addProduct("pomidor", 10);
+aliceBasket.addProduct("arbuz", 40);
+aliceBasket.showBasket();
 
 var bruceBasket = new Basket();
-bruceBasket.addProducts("rice",10);
-bruceBasket.addProducts("grzyby mun",50);
-bruceBasket.addProducts("tofu",20);
-bruceBasket.showsum();
-bruceBasket.showbasket();
+bruceBasket.addProduct("rice", 10);
+bruceBasket.addProduct("grzyby mun", 50);
+bruceBasket.addProduct("tofu", 20);
+bruceBasket.showBasket();
