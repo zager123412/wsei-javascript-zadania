@@ -108,9 +108,14 @@ const city={
 
 
     // zad 6
-    var spoon = {
-        isExist: true
-    }
-    
-    var fork = spoon;
-    fork.isExist  = false;
+   console.log("Zadanie 6:");
+
+var spoon = {
+    isExist: true
+}
+
+var fork = spoon;
+fork.isExist  = false;
+
+console.log(spoon);
+//isExist = false, łyżka nie istnieje
