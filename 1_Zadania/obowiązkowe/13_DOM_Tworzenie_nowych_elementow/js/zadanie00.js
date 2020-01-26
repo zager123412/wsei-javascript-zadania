@@ -3,7 +3,7 @@
     
 var element=document.getElementsByClassName("deleteBtn");
 
-for(i=0;i<tak.length;i++){
+for(i=0;i<element.length;i++){
     element[i].addEventListener("click",foo);
 }
 function foo(){
