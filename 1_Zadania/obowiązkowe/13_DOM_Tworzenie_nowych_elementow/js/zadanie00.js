@@ -1,15 +1,15 @@
 <script>
     
     
-var tak=document.getElementsByClassName("deleteBtn");
+var element=document.getElementsByClassName("deleteBtn");
 
 for(i=0;i<tak.length;i++){
-    tak[i].addEventListener("click",foo);
+    element[i].addEventListener("click",foo);
 }
 function foo(){
-    var nie=this;
-   nie=nie.parentElement.parentElement;
-    nie.parentElement.removeChild(nie);
+    var fooo=this;
+   fooo=fooo.parentElement.parentElement;
+    fooo.parentElement.removeChild(fooo);
 
 
 }
