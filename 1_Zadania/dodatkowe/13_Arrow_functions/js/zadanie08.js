@@ -1,7 +1,8 @@
+console.log("Zadanie 08:");
 const dog = {
     type: "Mammal",
     name: "",
-    setName: (newName) => {
+    setName: function(newName) {
         this.name = newName;
     }
 }
